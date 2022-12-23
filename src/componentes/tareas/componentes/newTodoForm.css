@@ -1,0 +1,80 @@
+  
+  .NewTodoForm {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .NewTodoForm label {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .NewTodoForm input {
+    flex-grow: 1;
+    padding: 0 1.5em;
+    font-size: initial;
+    width: 50%;
+  }
+  input{
+    background: var(--input-color);
+    color: var(--primary-color);
+  }
+
+  .TodoList{
+    color: var(--primary-color);
+  }
+  
+  .NewTodoForm  {
+    padding: 0 1.3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+    transform: background 0.2s ease-out;
+  }
+  
+
+  
+  .NewTodoForm input,
+  .NewTodoForm button {
+    font-family: "Quicksand", sans-serif;
+    height: 2.8rem;
+  }
+  .btn-tareas {
+    min-width: 130px;
+    height: 40px;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    overflow: hidden;
+    background-color: var(--bgc-boton); 
+    border: 2px var(--secondary-color) solid;
+    margin-left: .5rem; 
+  }
+  .btn-tareas:hover {
+    color: var(--primary-color);
+  }
+  .btn-tareas:hover:after {
+    width: 100%;
+  }
+  .btn-tareas:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bgc-boton-over);
+  }

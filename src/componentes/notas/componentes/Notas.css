@@ -1,0 +1,64 @@
+.todo-list{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.Notas-hoja{
+    background-color: var(--bgc-boton); 
+    height: 9rem;
+    width: 9rem;
+    margin: .3rem;
+    overflow: hidden;
+    border-radius: 3px 3px 2rem 3px;
+    border-color: var(--bgc-boton-boder)  1rem solid;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.462);
+    position: relative;
+    padding-top: 1.8rem;
+    margin-bottom: 2rem;
+ }
+ .remove-btn{
+    position: absolute;
+    top: -1.8rem;
+    right: 0%;
+ }
+ .text-nota{
+    margin-left: 13px;
+    font-style: italic;
+    font-weight: 500;
+ }
+
+ .Boton-notas {
+   min-width: 130px;
+   height: 40px;
+   color: var(--primary-color);
+   padding: 5px 10px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   position: relative;
+   display: inline-block;
+   outline: none;
+   border-radius: 5px;
+   z-index: 0;
+   overflow: hidden;
+   background-color: var(--bgc-boton); 
+   border: 2px var(--secondary-color) solid; 
+ }
+ .Boton-notas:hover {
+   color: var(--primary-color);
+ }
+ .Boton-notas:hover:after {
+   width: 100%;
+ }
+ .Boton-notas:after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   transition: all 0.3s ease;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 100%;
+   background: var(--bgc-boton-over);
+ }
